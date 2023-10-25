@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stddef.h>
+#include <stdlib.h>
 
 /**
  * struct listint_s - Doubly linked list node
@@ -30,5 +31,9 @@ void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void recursive_quick_sort(int *arr, int low, int high, size_t size);
 int lomuto_partition(int *arr, int low, int high, size_t size);
+
+void merge(int *array, int *left, size_t left_size,
+int *right, size_t right_size);
+void merge_sort(int *array, size_t size);
 
 #endif /* SORT_H */
